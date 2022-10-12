@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,193 @@
     <link rel="stylesheet" href="/Lab3/css/style.css">
     <script src="https://kit.fontawesome.com/ced582d964.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="header">
-        <div>
-            <h1>Union of Volonteers</h1>
+    <!-- Header start -->
+    <header>
+        <a href="#" class="logo"><img src="/Lab3/css/logo.png" alt="logo"></a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#leaders">Team</a></li>
+        </ul>
+        <!-- Icons -->
+        <div class="header-icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <!-- Search Box -->
+
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search service">
         </div>
     </header>
-
-    <main>
-        <p>We are union of Volonteers in Lviv,and we can help everyone who ask us.</p>
-        <p>Our team count several dozen of students, who wants to help people in that tought time.</p>
-        <p>Our leaders</p>
-    </main>
-
-    <footer>
-        &copy 2022;
-        <p><small>Help volunteers-help Ukrainians</small></p>
-        <p><small>Our socials</small></p>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-telegram"></i>
-        <i class="fa-solid fa-envelope"></i>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We are union of Volonteers</h1>
+            <p>Our team count several dozen of students, who wants to help people in that tought time</p>
+            <a href="#services" class="btn">Get help</a>
+        </div>
+        <div class="home-img">
+            <img src="/Lab3/css/doc.png" alt="">
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>How we create our union</h2>
+            <p> In 2019, our founder Oleksandr decided to gather volunteers in one place (in Vinnytsia). And then the public organization VoU was created. At that time, we helped
+                 people from the occupied territories with humanitarian aid and with the search for housing in Ukraine. </p>
+            <p>Since 2020, we have started opening our assistance 
+                centers in various cities of Ukraine: in Kyiv, Zaporizhzhia, Kropyvnytskyi and Kharkiv.</p> 
+            <p> Since the beginning of the full-scale invasion, we have started our work
+                in Lviv. Helped refugees: humanitarian aid, resettlement, restoration of documents and organization of free transfer abroad. In mid-March, another center was 
+                opened in Lviv at Zaliznychna 34.
+              Currently, we have already helped more than 500,000 refugees.</p> 
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Our services</h2>
+        </div>
+        <!-- Container -->
+        <div class="services-container">
+            <div class="box">
+                <img class="image" src="/Lab3/css/idcard-1.png" alt="">
+                <h3 class="title">ID Card</h3>
+                <div class="content">
+                    <span class="time">Wait:10 days</span>
+                    <button class="cart_qty_plus" id="id_cart_btnplus" type="button" ><i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="amount" id="amount">0</p>
+                    <button class="cart_qty_minus" id="id_cart_btnmin" type="button"><i
+                            class="fa-solid fa-minus"></i></button>
+                    <button class="add-to-cart" id="add-to-cart" type="button" ><i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="/Lab3/css/zagranpassport-ukraini.webp" alt="">
+                <h3 class="title">Passport</h3>
+                <div class="content">
+                    <span class="time">Wait:1 month</span>
+                    <button class="cart_qty_plus" id="id_cart_btnplus" type="button"><i
+                            class="fa-solid fa-plus"></i></button>
+                    <p class="amount" id="amount">0</p>
+                    <button class="cart_qty_minus" id="id_cart_btnmin" type="button"><i
+                            class="fa-solid fa-minus"></i></button>
+                    <button class="add-to-cart" id="add-to-cart" type="button" ><i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="/Lab3/css/dovidka_vpo_diia.jpg" alt="">
+                <h3 class="title">VPO certificate</h3>
+                <div class="content">
+                    <span class="time">Wait:3 days</span>
+                    <button class="cart_qty_plus" id="id_cart_btnplus" type="button" ><i
+                        class="fa-solid fa-plus"></i></button>
+                <p class="amount" id="amount">0</p>
+                <button class="cart_qty_minus" id="id_cart_btnmin" type="button"><i
+                        class="fa-solid fa-minus"></i></button>
+                    <button class="add-to-cart" id="add-to-cart" type="button" ><i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="/Lab3/css/ind_code.jpg" alt="">
+                <h3 class="title">Identification code</h3>
+                <div class="content">
+                    <span class="time">Wait:1 day</span>
+                    <button class="cart_qty_plus" id="id_cart_btnplus" type="button" ><i
+                        class="fa-solid fa-plus"></i></button>
+                <p class="amount" id="amount">0</p>
+                <button class="cart_qty_minus" id="id_cart_btnmin" type="button"><i
+                        class="fa-solid fa-minus"></i></button>
+                    <button class="add-to-cart" id="add-to-cart" type="button" ><i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="/Lab3/css/gum_help.jpeg" alt="">
+                <h3 class="title">Humanitarian help</h3>  
+                <div class="content">
+                    <span class="time">Wait:Now</span>
+                    <button class="cart_qty_plus" id="id_cart_btnplus" type="button" ><i
+                        class="fa-solid fa-plus"></i></button>
+                <p class="amount" id="amount">0</p>
+                <button class="cart_qty_minus" id="id_cart_btnmin" type="button"><i
+                        class="fa-solid fa-minus"></i></button>
+                    <button class="add-to-cart" id="add-to-cart" type="button" ><i
+                            class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart" id="cart">
+        <h2>Your order</h2>
+    </section>
+    <section class="leaders" id="leaders">
+        <div class="heading">
+            <h2>Our team</h2>
+        </div>
+        <!-- container -->
+        <div class="leaders-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Our founder-general director.
+                    "I came up with the idea of ​​creating an organization to help people."</p>
+                <h2>Alex Kram</h2>
+                <img src="/Lab3/css/alex.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Organizer of donations. She was born in Donetsk and eventually moved to Kharkiv, where she used the help center</p>
+                <h2>Kate Dorosheva</h2>
+                <img src="/Lab3/css/kate.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Our programmer. Maintains the operation and efficiency of the help site.</p>
+                <h2>Daniel Gard</h2>
+                <img src="/Lab3/css/dan.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="footer-box">
+        <h4>&copy Volonteers of Ukraine 2022. Всі права застережені.
+        </h4>
+        <h3>Help volunteers-help Ukrainians</h3>
+        <div class="socials">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
     </footer>
+
+    <script src="/Lab3/js/script.js"></script>
 </body>
+
 </html>

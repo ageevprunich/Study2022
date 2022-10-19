@@ -1,0 +1,28 @@
+{
+    "fruits":[
+        {
+            "id": 1,
+            "fruit": "apple",
+            "shape":"ball",
+            "image":"/style/apple.png"
+        },
+        {
+            "id": 2,
+            "fruit": "bannana",
+            "shape":"bent cylindr",
+            "image":"/style/banan.png"
+        },
+        {
+            "id": 3,
+            "fruit": "watermelon",
+            "shape":"elips",
+            "image":"/style/watermelon.png"
+        },
+        {
+            "id": 4,
+            "fruit": "grape",
+            "shape":"small balls",
+            "image":"/style/grape.png"
+        }
+    ]
+}

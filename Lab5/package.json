@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "server": "json-server -w fruits.json"
+    "server": "json-server -w -H 0.0.0.0 fruits.json --port 3000"
   },
   "keywords": [],
   "author": "",
